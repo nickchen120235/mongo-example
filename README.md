@@ -14,6 +14,7 @@ This is an example of CRUD in MongoDB in JavaScript.
 
     Example: <code>node create.js</code>
 
-3. Typical routine of demonstration: 
+4. Typical routine of demonstration: 
 
     create -> insert_document -> read -> update -> delete
+5. For **update.js** and **delete.js**, use <code>mongo</code> shell to see changes.
