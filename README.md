@@ -12,6 +12,8 @@ This is an example of CRUD in MongoDB in JavaScript.
     <code>cd mongo-example && npm install</code>
 3. Use <code>node</code> to run .js files
 
+    Example: <code>node create.js</code>
+
 3. Typical routine of demonstration: 
 
     create -> insert_document -> read -> update -> delete
