@@ -28,6 +28,6 @@ mc.connect(dburl, (err, db) => {
         if(err)throw err
         console.log('Address = \'bbb\':')
         console.log(res)
+        db.close()
     })
-    db.close()
 })

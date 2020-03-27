@@ -8,6 +8,6 @@ mc.connect(dburl, (err, db) => {
     var delQuery = {address: 'bbb'}
     c.deleteOne(delQuery,(err, res) => {
         if(err)throw err
+        db.close()
     })
-    db.close()
 })

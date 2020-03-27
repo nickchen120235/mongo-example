@@ -9,6 +9,6 @@ mc.connect(dburl, (err, db) => {
     var updateValue = {$set: {name: 'EEE', address: 'fff'}}
     c.updateOne(updateQuery, updateValue, (err, res) => {
         if(err)throw err
+        db.close()
     })
-    db.close()
 })

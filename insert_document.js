@@ -24,6 +24,6 @@ mc.connect(dburl, (err, db) => {
     dbo.collection('customers').insertMany(multipleObjs, (err, res) => {
         if(err)throw err
         console.log(res)
+        db.close()
     })
-    db.close()
 })
