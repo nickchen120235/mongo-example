@@ -3,7 +3,7 @@ var dburl = 'mongodb://localhost:27017'
 
 mc.connect(dburl, (err, db) => {
     if(err) throw err
-    var c = db.db('mydb').collection('customers')
+    var c = db.db('newdb').collection('newCollection')
     
     var delQuery = {address: 'bbb'}
     c.deleteOne(delQuery,(err, res) => {

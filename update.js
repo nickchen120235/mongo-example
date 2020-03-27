@@ -3,7 +3,7 @@ var dburl = 'mongodb://localhost:27017'
 
 mc.connect(dburl, (err, db) => {
     if(err)throw err
-    var c = db.db('mydb').collection('customers')
+    var c = db.db('newdb').collection('newCollection')
 
     var updateQuery = {address: 'aaa'}
     var updateValue = {$set: {name: 'EEE', address: 'fff'}}

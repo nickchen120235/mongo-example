@@ -14,14 +14,14 @@ var multipleObjs = [
 
 mc.connect(dburl, (err, db) => {
     if(err)throw err
-    var dbo = db.db('mydb')
+    var c = db.db('newdb').collection('newCollection')
     //Insert a document
-    dbo.collection('customers').insertOne(singleObj, (err, res) => {
+    c.insertOne(singleObj, (err, res) => {
         if(err)throw err
         console.log(res)
     })
     //Insert multiple documents
-    dbo.collection('customers').insertMany(multipleObjs, (err, res) => {
+    c.insertMany(multipleObjs, (err, res) => {
         if(err)throw err
         console.log(res)
         db.close()
