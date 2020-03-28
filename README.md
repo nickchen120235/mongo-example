@@ -1,5 +1,5 @@
 # MongoDB Example
-This is an example of CRUD in MongoDB in JavaScript. 
+This is an example of CRUD in MongoDB using JavaScript. 
 ## Requirements: 
 * MongoDB
 * Node
