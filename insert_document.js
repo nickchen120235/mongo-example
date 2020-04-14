@@ -12,7 +12,7 @@ var multipleObjs = [
     {name: 'EEE', address: 'eee'}
 ]
 
-mc.connect(dburl, (err, db) => {
+mc.connect(dburl, {useUnifiedTopology: true}, (err, db) => {
     if(err)throw err
     var c = db.db('newdb').collection('newCollection')
     //Insert a document

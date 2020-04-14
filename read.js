@@ -1,7 +1,7 @@
 var mc = require('mongodb').MongoClient
 var dburl = 'mongodb://localhost:27017'
 
-mc.connect(dburl, (err, db) => {
+mc.connect(dburl, {useUnifiedTopology: true}, (err, db) => {
     if(err)throw err
     var c = db.db('newdb').collection('newCollection')
     //Find the first document
