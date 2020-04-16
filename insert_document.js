@@ -21,7 +21,6 @@ mc.connect(dburl, {useUnifiedTopology: true}, (err, db) => {
         console.log('insertOne Result:')
         console.log(res.result)
         console.log(res.ops)
-        console.log(res.insertedId)
     })
     //Insert multiple documents
     c.insertMany(multipleObjs, (err, res) => {
