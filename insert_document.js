@@ -11,6 +11,13 @@ var multipleObjs = [
     {name: 'DDD', address: 'ddd'},
     {name: 'EEE', address: 'eee'}
 ]
+var nestedObj = {
+    "name": "qwerty",
+    "numbers": {
+        "a": 123,
+        "b": 456
+    }
+}
 
 mc.connect(dburl, {useUnifiedTopology: true}, (err, db) => {
     if(err)throw err
@@ -27,6 +34,10 @@ mc.connect(dburl, {useUnifiedTopology: true}, (err, db) => {
         if(err)throw err
         console.log('insertMany Result:')
         console.log(res)
+    })
+    c.insertOne(nestedObj, (err, res) => {
+        console.log('Insert Nested Object: ')
+        console.log(res.ops)
         db.close()
     })
 })
