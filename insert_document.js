@@ -12,10 +12,10 @@ var multipleObjs = [
     {name: 'EEE', address: 'eee'}
 ]
 var nestedObj = {
-    "name": "qwerty",
-    "numbers": {
-        "a": 123,
-        "b": 456
+    name: 'qwerty',
+    numbers: {
+        a: 123,
+        b: 456
     }
 }
 
