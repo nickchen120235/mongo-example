@@ -16,7 +16,7 @@
 ## 3. JavaScript API Demonstration
 #### Create
 - create.js
-> lazy creation
+> ~lazy creation~ When using API the database is created immediately
 - insert_document.js
 > result of insert
 #### Read
